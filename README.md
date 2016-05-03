@@ -17,7 +17,7 @@ Este pacote foi desenvolvido com o intuito de facilidade implementação de cons
 Toda implementação será de sua responsabilidade.
 
 ### Version Stable
-1.0.0
+1.0.2
 
 ### Instalação
 
