@@ -1,4 +1,4 @@
-<?php namespace Captcha\DeathByCaptcha\Interfaces;
+<?php namespace Captcha\Interfaces;
 
 /**
  *

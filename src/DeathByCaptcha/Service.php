@@ -1,8 +1,8 @@
 <?php namespace Captcha\DeathByCaptcha;
 
 use Captcha\DeathByCaptcha\Abstracts\Client;
-use Captcha\DeathByCaptcha\Interfaces\ServiceInterface;
 use Captcha\DeathByCaptcha\SocketClient;
+use Captcha\Interfaces\ServiceInterface;
 
 /**
  *
