@@ -45,6 +45,13 @@ $text = $dbc->upload($base64Image);
 // looping
 echo $text;
 ```
+Laravel
+```php
+$dbc = dbc::credentials('yourLogin', 'yourPassword');
+$text = $dbc->upload($base64Image);
+// looping
+echo $text;
+```
 
 ### Desenvolvimento
 Deseja contribuir com desenvolvimento? pull request :)
