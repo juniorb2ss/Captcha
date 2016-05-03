@@ -1,0 +1,25 @@
+{
+    "name": "juniorb2ss/captcha",
+    "description": "Package de serviços para quebra de captcha",
+    "type": "package",
+    "require-dev": {
+        "php": ">=5.5.9",
+        "ext-gd": "*",
+        "intervention/image": "^2.3",
+        "illuminate/support": "~4|~5",
+        "phpunit/phpunit": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Eduardo",
+            "email": "juniob2ss@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "psr-4": {
+        "Captcha\\": "src"
+    }
+}
