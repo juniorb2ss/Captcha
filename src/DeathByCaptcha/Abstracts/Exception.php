@@ -1,6 +1,6 @@
 <?php namespace Captcha\DeathByCaptcha\Abstracts;
 
-use Exception;
+use Exception as BaseException;
 
 /**
  * Base class for DBC related exceptions.
@@ -8,4 +8,4 @@ use Exception;
  * @package DBCAPI
  * @subpackage PHP
  */
-abstract class Exception extends Exception {}
+abstract class Exception extends BaseException {}
