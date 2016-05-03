@@ -20,8 +20,10 @@ class testCaptchResolve extends \PHPUnit_Framework_TestCase {
 	public function testResolve($basee64Image) {
 
 		// load env
-		$dotenv = new \Dotenv\Dotenv(__DIR__ . '/../../');
-		$dotenv->load();
+		if (file_exists(__DIR__ . '/../../.env')) {
+			$dotenv = new \Dotenv\Dotenv(__DIR__ . '/../../');
+			$dotenv->load();
+		}
 
 		$service = new Service;
 
