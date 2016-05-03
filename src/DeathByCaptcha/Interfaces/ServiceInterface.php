@@ -1,25 +1,12 @@
 <?php namespace Captcha\DeathByCaptcha\Interfaces;
 
 /**
-* 
-*/
-interface ServiceInterface
-{
-	/**
-	 * Username
-	 * @var string
-	 */
-	private $username;
-
-	/**
-	 * Password
-	 * @var string
-	 */
-	private $password;
-
+ *
+ */
+interface ServiceInterface {
 	/**
 	 * Set credentials
-	 * @param  string $username 
+	 * @param  string $username
 	 * @param  string $password
 	 * @return Service
 	 */
@@ -28,7 +15,7 @@ interface ServiceInterface
 	/**
 	 * request decode captcha in service
 	 * @param  string $captcha base64 or path image
-	 * @param  array $extra            
+	 * @param  array $extra
 	 * @return Service
 	 */
 	public function upload($captcha, $extra);

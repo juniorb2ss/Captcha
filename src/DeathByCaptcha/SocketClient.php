@@ -248,7 +248,7 @@ class SocketClient extends Client {
 	public function upload($captcha, $extra = []) {
 		$img = $this->_load_captcha($captcha);
 		if ($this->_is_valid_captcha($img)) {
-			if ($extra['banner']) {
+			if (isset($extra['banner'])) {
 				$extra['banner'] = $this->_load_captcha($extra['banner']);
 				if ($this->_is_valid_captcha($extra['banner'])) {
 					$extra['banner'] = base64_encode($extra['banner']);
