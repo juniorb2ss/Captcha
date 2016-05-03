@@ -14,7 +14,7 @@
     ],
     "require": {
         "vlucas/phpdotenv": "^2.2",
-        "php": ">=5.5.9",
+        "php": ">=5.6",
         "ext-gd": "*",
         "intervention/image": "^2.3",
         "illuminate/support": "~4|~5"
