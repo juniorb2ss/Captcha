@@ -7,6 +7,8 @@
 
 Pacote de serviços para quebra de captcha. Para quebra de captcha é utilizado serviço `DeathByCaptcha`, é feito uma requisição pela abstração da API do serviço, após efetuar requisição é preciso esperar em torno de `~10` segundos para obter a resposta. Visite o site deles e assine um plano para obter credenciais.
 
+No manual do serviço possui detalhes de como trabalhar com os parametros para envio de outros tipos de captchas.
+
 Este pacote deverá ser usado com responsabilidade, o autor e contribuidores não devem responder pelas implementações/ações feita com este pacote.
 
 ### Atenção
