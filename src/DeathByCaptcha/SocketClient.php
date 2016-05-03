@@ -3,6 +3,7 @@
 use Captcha\DeathByCaptcha\Abstracts\Client;
 use Captcha\DeathByCaptcha\Exceptions\AccessDeniedException;
 use Captcha\DeathByCaptcha\Exceptions\Exception;
+use Captcha\DeathByCaptcha\Exceptions\InvalidCaptchaException;
 use Captcha\DeathByCaptcha\Exceptions\IOException;
 use Captcha\DeathByCaptcha\Exceptions\RuntimeException;
 use Captcha\DeathByCaptcha\Exceptions\ServerException;
