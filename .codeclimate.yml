@@ -9,3 +9,5 @@ ratings:
   - "**.php"
 exclude_paths:
 - tests/
+- "src/DeathByCaptcha/SocketClient.php"
+- "src/DeathByCaptcha/HttpClient.php"
