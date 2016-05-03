@@ -3,10 +3,6 @@
     "description": "Package de serviços para quebra de captcha",
     "type": "package",
     "require-dev": {
-        "php": ">=5.5.9",
-        "ext-gd": "*",
-        "intervention/image": "^2.3",
-        "illuminate/support": "~4|~5",
         "phpunit/phpunit": "^5.3"
     },
     "license": "MIT",
@@ -17,9 +13,15 @@
         }
     ],
     "require": {
-        "vlucas/phpdotenv": "^2.2"
+        "vlucas/phpdotenv": "^2.2",
+        "php": ">=5.5.9",
+        "ext-gd": "*",
+        "intervention/image": "^2.3",
+        "illuminate/support": "~4|~5"
     },
-    "psr-4": {
-        "Captcha\\": "src"
+    "autoload": {
+        "psr-4": {
+            "Captcha\\": "src"
+        }
     }
 }

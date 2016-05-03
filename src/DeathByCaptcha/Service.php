@@ -40,6 +40,12 @@ class Service implements ServiceInterface {
 	const DEFAULT_TIMEOUT = Client::DEFAULT_TIMEOUT;
 
 	/**
+	 * captcha id
+	 * @var string
+	 */
+	private $captcha_id;
+
+	/**
 	 * Set credentials
 	 * @param  string $username
 	 * @param  string $password
@@ -60,7 +66,34 @@ class Service implements ServiceInterface {
 	public function upload($captcha, $extra = []) {
 		$captcha = $this->SocketClient->upload($captcha, $extra);
 
-		return $captcha;
+		$this->captcha_id = $captcha['captcha'];
+
+		/**
+		 * overload service to get response
+		 */
+		if ($captcha) {
+			sleep(2);
+
+			while (5 <= 5) {
+				if ($text = $this->text($captcha['captcha'])) {
+					break;
+				}
+				sleep(3);
+			}
+		}
+
+		return $text;
+	}
+
+	/**
+	 * Report captcha not resolved
+	 * @param  string $captcha captcha id
+	 * @return Service
+	 */
+	public function report($captcha) {
+		$this->SocketClient->upload($captcha);
+
+		return $this;
 	}
 
 	/**
