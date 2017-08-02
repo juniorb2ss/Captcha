@@ -20,8 +20,8 @@
         "intervention/image": "^2.3",
         "illuminate/support": "~4|~5"
     },
-    "require-dev": {
-        "codeclimate/php-test-reporter": "^0.3.2"
+    "suggest": {
+        "codeclimate/php-test-reporter": "Needed to use codeclimate"
     },
     "autoload": {
         "psr-4": {
