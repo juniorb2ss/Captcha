@@ -17,11 +17,11 @@
         "php": ">=5.5.9",
         "ext-curl": "*",
         "ext-gd": "*",
-        "intervention/image": "^2.3",
-        "illuminate/support": "~4|~5"
+        "intervention/image": "^2.3"
     },
     "suggest": {
-        "codeclimate/php-test-reporter": "Needed to use codeclimate"
+        "codeclimate/php-test-reporter": "Needed to use codeclimate",
+        "illuminate/support": "Case of Laravel framework"
     },
     "autoload": {
         "psr-4": {
